@@ -1,0 +1,41 @@
+.container{
+    margin: 0 auto;
+    padding-top:200px;
+    width:1280px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #cccccc;
+    height:400px;
+    width:300px;
+    background-color:aqua;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .item{
+  z-index: -1;
+  position: absolute;
+}
+
+.content{
+  width:300px;
+  height:500px;
+  background-color: aquamarine;
+}
